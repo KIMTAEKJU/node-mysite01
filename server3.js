@@ -10,7 +10,7 @@ app.use( connectRoute(function(router){
      router.get('/', function (req, resp) { // 읽어서보내기?
         // resp.setHeader('Content-Type', 'text/html');
         // resp.end('<h1>main</h1>');
-
+        console.log("test");
          fs.readFile( __dirname + "/htdocs/main/index.html",
                         "utf-8",
                         function (error, data) {
